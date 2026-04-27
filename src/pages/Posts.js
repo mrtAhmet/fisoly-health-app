@@ -20,8 +20,8 @@ function Posts() {
         const search = searchTerm.toLowerCase();
 
         const matchesSearch =
-            post[lang].title.toLowerCase().includes(search) ||
-            post[lang].tags.some(tag => tag.toLowerCase().includes(search)) ||
+            (post[lang]?.title?.toLowerCase()?.includes(search) || false)
+        post[lang].tags.some(tag => tag.toLowerCase().includes(search)) ||
             post.baseCategory.toLowerCase().includes(search);
 
         const matchesCategory =
