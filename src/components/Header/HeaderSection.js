@@ -17,7 +17,7 @@ function HeaderSection({ lang, setLang }) {
 
     return (
         <header className="header">
-            <div className="logo">FitApp</div>
+            <div className="logo">Fisoyl</div>
 
             {/* Desktop Search*/}
 
