@@ -10,22 +10,23 @@ function Posts() {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedPost, setSelectedPost] = useState(null);
-    const currentLang = i18n.language;
 
+    // Dil kodunun her zaman var olduğundan emin olalım (fallback as 'en')
+    const currentLang = i18n.language || 'en';
     const navigate = useNavigate();
 
-    // Filtreleme Algoritması
-    const filteredPosts = postsData.filter(post => {
-        const lang = currentLang;
+    // Filtreleme Algoritması - Güvenli hale getirildi
+    const filteredPosts = (postsData || []).filter(post => {
         const search = searchTerm.toLowerCase();
 
+        // post[currentLang] var mı kontrolü ve tüm alt özelliklere güvenli erişim
         const matchesSearch =
-            (post[lang]?.title?.toLowerCase()?.includes(search) || false) ||
-            (post[lang]?.tags?.some(tag => tag.toLowerCase().includes(search)) || false) ||
-            (post.baseCategory?.toLowerCase()?.includes(search) || false);
+            (post?.[currentLang]?.title?.toLowerCase()?.includes(search) || false) ||
+            (post?.[currentLang]?.tags?.some(tag => tag?.toLowerCase()?.includes(search)) || false) ||
+            (post?.baseCategory?.toLowerCase()?.includes(search) || false);
 
         const matchesCategory =
-            selectedCategory === 'all' || post.baseCategory === selectedCategory;
+            selectedCategory === 'all' || post?.baseCategory === selectedCategory;
 
         return matchesSearch && matchesCategory;
     });
@@ -35,11 +36,13 @@ function Posts() {
             if (event.keyCode === 27) setSelectedPost(null);
         };
         window.addEventListener('keydown', handleEsc);
-
-        return () => {
-            window.removeEventListener('keydown', handleEsc);
-        };
+        return () => window.removeEventListener('keydown', handleEsc);
     }, []);
+
+    // Eğer veri henüz gelmediyse veya boşsa kullanıcıya boş ekran yerine bilgi verelim
+    if (!postsData || postsData.length === 0) {
+        return <div className="posts-page">{t('loading') || 'Loading...'}</div>;
+    }
 
     return (
         <div className="posts-page">
@@ -85,13 +88,17 @@ function Posts() {
                             className="post-item"
                             onClick={() => setSelectedPost(post)}
                         >
-                            <img src={post.image} alt={post[currentLang].title} />
+                            <img
+                                src={post?.image}
+                                alt={post?.[currentLang]?.title || "Post"}
+                            />
                             <div className="post-info">
-                                <h3>{post[currentLang].title}</h3>
+                                {/* currentLang kontrolü JSX içinde de zorunlu */}
+                                <h3>{post?.[currentLang]?.title || t('untitled')}</h3>
                                 <div className="post-tags">
-                                    {post[currentLang].tags.map(tag => (
+                                    {post?.[currentLang]?.tags?.map(tag => (
                                         <span key={tag}>#{tag}</span>
-                                    ))}
+                                    )) || null}
                                 </div>
                             </div>
                         </motion.div>
@@ -116,28 +123,29 @@ function Posts() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button className="close-btn" onClick={() => setSelectedPost(null)}>&times;</button>
-                            <img src={selectedPost.image} alt="Detail" />
+                            <img src={selectedPost?.image} alt="Detail" />
 
                             <div className="modal-text-content">
-                                <h2>{selectedPost[currentLang]?.title}</h2>
-                                <p className="modal-subtitle">{selectedPost[currentLang]?.subtitle}</p>
+                                <h2>{selectedPost?.[currentLang]?.title}</h2>
+                                <p className="modal-subtitle">{selectedPost?.[currentLang]?.subtitle}</p>
 
                                 <div className="modal-tags">
-                                    {selectedPost[currentLang]?.tags?.map(tag => (
+                                    {selectedPost?.[currentLang]?.tags?.map(tag => (
                                         <span key={tag} className="tag-pill">#{tag}</span>
                                     ))}
                                 </div>
 
                                 <p className="modal-overview-summary">
-                                    {selectedPost[currentLang]?.overview}
+                                    {selectedPost?.[currentLang]?.overview}
                                 </p>
                             </div>
 
                             <button
                                 className="modal-detail-btn"
                                 onClick={() => {
+                                    const id = selectedPost.id;
                                     setSelectedPost(null);
-                                    navigate(`/posts/${selectedPost.id}`);
+                                    navigate(`/posts/${id}`);
                                 }}
                             >
                                 {t('viewMoreDetails')}
