@@ -20,9 +20,9 @@ function Posts() {
         const search = searchTerm.toLowerCase();
 
         const matchesSearch =
-            (post[lang]?.title?.toLowerCase()?.includes(search) || false)
-        post[lang].tags.some(tag => tag.toLowerCase().includes(search)) ||
-            post.baseCategory.toLowerCase().includes(search);
+            (post[lang]?.title?.toLowerCase()?.includes(search) || false) ||
+            (post[lang]?.tags?.some(tag => tag.toLowerCase().includes(search)) || false) ||
+            (post.baseCategory?.toLowerCase()?.includes(search) || false);
 
         const matchesCategory =
             selectedCategory === 'all' || post.baseCategory === selectedCategory;
