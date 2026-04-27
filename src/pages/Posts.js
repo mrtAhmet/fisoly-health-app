@@ -11,18 +11,26 @@ function Posts() {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedPost, setSelectedPost] = useState(null);
 
-    // Dil kodunun her zaman var olduğundan emin olalım (fallback as 'en')
-    const currentLang = i18n.language || 'en';
     const navigate = useNavigate();
 
-    // Filtreleme Algoritması - Güvenli hale getirildi
+    // 1. Dil kodunu normalize et (tr-TR -> tr)
+    const currentLang = i18n.language?.split('-')[0] || 'tr';
+
+    // 2. İçerik Getirici (Helper) - Bunu filtreleme içinde de kullanacağız
+    const getPostContent = (post) => {
+        if (!post) return null;
+        return post[currentLang] || post['tr'] || post['en'] || Object.values(post).find(v => v?.title);
+    };
+
+    // 3. Filtreleme Algoritması
     const filteredPosts = (postsData || []).filter(post => {
         const search = searchTerm.toLowerCase();
+        const content = getPostContent(post); // İşte kilit nokta burası!
 
-        // post[currentLang] var mı kontrolü ve tüm alt özelliklere güvenli erişim
+        // Artık post[currentLang] yerine doğrudan güvenli 'content' üzerinden arıyoruz
         const matchesSearch =
-            (post?.[currentLang]?.title?.toLowerCase()?.includes(search) || false) ||
-            (post?.[currentLang]?.tags?.some(tag => tag?.toLowerCase()?.includes(search)) || false) ||
+            (content?.title?.toLowerCase()?.includes(search) || false) ||
+            (content?.tags?.some(tag => tag?.toLowerCase()?.includes(search)) || false) ||
             (post?.baseCategory?.toLowerCase()?.includes(search) || false);
 
         const matchesCategory =
@@ -39,7 +47,7 @@ function Posts() {
         return () => window.removeEventListener('keydown', handleEsc);
     }, []);
 
-    // Eğer veri henüz gelmediyse veya boşsa kullanıcıya boş ekran yerine bilgi verelim
+    // Erken Dönüş (Loading)
     if (!postsData || postsData.length === 0) {
         return <div className="posts-page">{t('loading') || 'Loading...'}</div>;
     }
@@ -77,32 +85,36 @@ function Posts() {
 
             <motion.div layout className="posts-masonry">
                 <AnimatePresence>
-                    {filteredPosts.map(post => (
-                        <motion.div
-                            key={post.id}
-                            layout
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            whileHover={{ y: -10 }}
-                            className="post-item"
-                            onClick={() => setSelectedPost(post)}
-                        >
-                            <img
-                                src={post?.image}
-                                alt={post?.[currentLang]?.title || "Post"}
-                            />
-                            <div className="post-info">
-                                {/* currentLang kontrolü JSX içinde de zorunlu */}
-                                <h3>{post?.[currentLang]?.title || t('untitled')}</h3>
-                                <div className="post-tags">
-                                    {post?.[currentLang]?.tags?.map(tag => (
-                                        <span key={tag}>#{tag}</span>
-                                    )) || null}
+                    {filteredPosts.map(post => {
+                        // Her post için içeriği bir kez burada çekelim, kod temiz kalsın
+                        const content = getPostContent(post);
+
+                        return (
+                            <motion.div
+                                key={post.id}
+                                layout
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                exit={{ opacity: 0, scale: 0.9 }}
+                                whileHover={{ y: -10 }}
+                                className="post-item"
+                                onClick={() => setSelectedPost(post)}
+                            >
+                                <img
+                                    src={post?.image}
+                                    alt={content?.title || "Fisoyl"}
+                                />
+                                <div className="post-info">
+                                    <h3>{content?.title || t('untitled')}</h3>
+                                    <div className="post-tags">
+                                        {content?.tags?.map(tag => (
+                                            <span key={tag}>#{tag}</span>
+                                        )) || null}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.div>
+                        );
+                    })}
                 </AnimatePresence>
             </motion.div>
 
@@ -125,18 +137,19 @@ function Posts() {
                             <button className="close-btn" onClick={() => setSelectedPost(null)}>&times;</button>
                             <img src={selectedPost?.image} alt="Detail" />
 
+                            {/* Modal içindeki içerikleri de getPostContent ile güvenli hale getirdik */}
                             <div className="modal-text-content">
-                                <h2>{selectedPost?.[currentLang]?.title}</h2>
-                                <p className="modal-subtitle">{selectedPost?.[currentLang]?.subtitle}</p>
+                                <h2>{getPostContent(selectedPost)?.title}</h2>
+                                <p className="modal-subtitle">{getPostContent(selectedPost)?.subtitle}</p>
 
                                 <div className="modal-tags">
-                                    {selectedPost?.[currentLang]?.tags?.map(tag => (
+                                    {getPostContent(selectedPost)?.tags?.map(tag => (
                                         <span key={tag} className="tag-pill">#{tag}</span>
                                     ))}
                                 </div>
 
                                 <p className="modal-overview-summary">
-                                    {selectedPost?.[currentLang]?.overview}
+                                    {getPostContent(selectedPost)?.overview}
                                 </p>
                             </div>
 
@@ -155,7 +168,7 @@ function Posts() {
                 )}
             </AnimatePresence>
         </div>
-    )
+    );
 }
 
 export default Posts
