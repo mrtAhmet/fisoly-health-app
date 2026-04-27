@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import './css/App.css';
+import HeaderSection from './components/Header/HeaderSection';
+import MainContent from './layout/MainContent';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+
+  const { t } = useTranslation();
+
+  const [lang, setLang] = useState(t('language'));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className='Layout'>
+        <HeaderSection lang={lang} setLang={setLang} />
+        <div className='Content'>
+          <MainContent lang={lang} />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

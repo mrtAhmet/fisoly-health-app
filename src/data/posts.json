@@ -1,0 +1,472 @@
+[
+    {
+        "id": 1,
+        "image": "/images/avokadoPure.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "calories",
+            "value1": "280 kcal",
+            "label2": "fat",
+            "value2": "22g",
+            "label3": "carbs",
+            "value3": "15g",
+            "label4": "time",
+            "value4": "5 min"
+        },
+        "tr": {
+            "title": "Avokado Püreli Ekmek",
+            "subtitle": "Enerji dolu bir başlangıç.",
+            "overview": "Sağlıklı yağlar ve kompleks karbonhidratların mükemmel uyumuyla güne zinde başlayın.",
+            "steps": [
+                "Avokadoyu çatal yardımıyla ezip üzerine limon sıkın.",
+                "Tam buğday ekmeğini hafifçe kızartın.",
+                "Püreyi ekmeğe sürüp üzerine çörek otu veya pul biber serpin."
+            ],
+            "tips": "Üzerine ekleyeceğiniz bir adet poşe yumurta protein değerini iki katına çıkarır.",
+            "tags": [
+                "Kahvaltı",
+                "Sağlıklı",
+                "Hızlı"
+            ]
+        },
+        "en": {
+            "title": "Avocado Toast",
+            "subtitle": "Energetic start for your day.",
+            "overview": "The perfect balance of healthy fats and complex carbohydrates to keep you fueled.",
+            "steps": [
+                "Mash the avocado with a fork and squeeze fresh lemon juice.",
+                "Toast a slice of whole-grain bread until golden.",
+                "Spread the mash and garnish with chili flakes or black seed."
+            ],
+            "tips": "Adding a poached egg on top will double the protein content.",
+            "tags": [
+                "Breakfast",
+                "Healthy",
+                "Quick"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "image": "/images/deadlift.jpg",
+        "baseCategory": "exercise",
+        "highlights": {
+            "label1": "target",
+            "value1": "back",
+            "label2": "level",
+            "value2": "advanced",
+            "label3": "duration",
+            "value3": "45 min",
+            "label4": "equipment",
+            "value4": "barbell"
+        },
+        "tr": {
+            "title": "Temel Deadlift Tekniği",
+            "subtitle": "Tüm vücudu çalıştıran en etkili hareket.",
+            "overview": "Deadlift, arka zincir kaslarını güçlendiren ve duruş bozukluklarını gideren anahtar bir harekettir.",
+            "steps": [
+                "Barı kaval kemiklerinize yakın tutarak omuz genişliğinde durun.",
+                "Sırtınızı düz tutarak kalçanızı geriye verin ve barı kavrayın.",
+                "Nefesinizi tutup gövdenizi sabitleyerek barı kontrollü şekilde kaldırın."
+            ],
+            "tips": "Ağırlığı kaldırırken barın bacaklarınızdan uzaklaşmasına asla izin vermeyin.",
+            "tags": [
+                "Güç",
+                "Spor Salonu",
+                "Tüm Vücut"
+            ]
+        },
+        "en": {
+            "title": "Deadlift Form Basics",
+            "subtitle": "The ultimate full-body movement.",
+            "overview": "Deadlift is a key movement that strengthens the posterior chain and improves overall posture.",
+            "steps": [
+                "Stand with feet shoulder-width apart, keeping the bar close to your shins.",
+                "Keep your back flat, hinge your hips back, and grip the bar.",
+                "Brace your core and lift the bar upward in a controlled motion."
+            ],
+            "tips": "Never let the bar drift away from your legs during the lift.",
+            "tags": [
+                "Strength",
+                "Gym",
+                "Full Body"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "image": "/images/smoothie.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "calories",
+            "value1": "150 kcal",
+            "label2": "vitamin",
+            "value2": "high",
+            "label3": "sugar",
+            "value3": "low",
+            "label4": "time",
+            "value4": "3 min"
+        },
+        "tr": {
+            "title": "Yeşil Enerji Smoothie",
+            "subtitle": "Güne taze bir başlangıç yapın.",
+            "overview": "Vücudunuzu toksinlerden arındıran ve mikrobesin ihtiyacınızı karşılayan vitamin bombası.",
+            "steps": [
+                "Ispanak, yeşil elma ve taze zencefili yıkayın.",
+                "Tüm malzemeleri blender kabına ekleyin.",
+                "Pürüzsüz bir kıvam alana kadar yüksek hızda karıştırın."
+            ],
+            "tips": "Daha ferah bir tat için içine 2-3 adet buz küpü ekleyebilirsiniz.",
+            "tags": [
+                "İçecek",
+                "Detoks",
+                "Vitamin"
+            ]
+        },
+        "en": {
+            "title": "Green Energy Smoothie",
+            "subtitle": "Perfect for a fresh start.",
+            "overview": "A vitamin bomb that detoxifies your body and meets your micronutrient needs.",
+            "steps": [
+                "Wash the spinach, green apple, and fresh ginger.",
+                "Place all ingredients into a blender.",
+                "Blend at high speed until the texture is completely smooth."
+            ],
+            "tips": "Add 2-3 ice cubes for a more refreshing experience.",
+            "tags": [
+                "Drink",
+                "Detox",
+                "Vitamin"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "image": "/images/yoga.jpg",
+        "baseCategory": "exercise",
+        "highlights": {
+            "label1": "target",
+            "value1": "mobility",
+            "label2": "level",
+            "value2": "beginner",
+            "label3": "duration",
+            "value3": "10 min",
+            "label4": "equipment",
+            "value4": "none"
+        },
+        "tr": {
+            "title": "Sabah Esneme Rutini",
+            "subtitle": "Eklemlerinizi açacak 10 dakikalık rehber.",
+            "overview": "Sabah yapılan hafif esneme hareketleri kan dolaşımını canlandırır ve güne odaklanmanızı sağlar.",
+            "steps": [
+                "Boyun ve omuz dairesel hareketleriyle başlayın.",
+                "Kedi-İnek pozuyla omurganızı rahatlatın.",
+                "Çocuk pozunda 1 dakika bekleyerek zihninizi sakinleştirin."
+            ],
+            "tips": "Hareketleri yaparken derin ve kontrollü nefes almayı unutmayın.",
+            "tags": [
+                "Esneklik",
+                "Evde",
+                "Yoga"
+            ]
+        },
+        "en": {
+            "title": "Morning Stretch Routine",
+            "subtitle": "10-minute guide to open your joints.",
+            "overview": "Light morning stretches stimulate blood circulation and help you focus throughout the day.",
+            "steps": [
+                "Start with neck and shoulder circles.",
+                "Relax your spine with the Cat-Cow pose.",
+                "Hold the Child's Pose for 1 minute to calm your mind."
+            ],
+            "tips": "Don't forget to take deep and controlled breaths during the stretches.",
+            "tags": [
+                "Mobility",
+                "Home",
+                "Yoga"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "image": "/images/pancake.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "Calories",
+            "value1": "210 kcal",
+            "label2": "Protein",
+            "value2": "9g",
+            "label3": "Carbs",
+            "value3": "32g",
+            "label4": "Time",
+            "value4": "10 min"
+        },
+        "tr": {
+            "title": "Yulaflı Muzlu Pankek",
+            "subtitle": "Hafif ve besleyici bir kahvaltı.",
+            "overview": "Bu tarif, rafine şeker içermez ve muzun doğal aromasıyla zenginleştirilmiştir. Uzun süre tokluk hissi sağlar.",
+            "steps": [
+                "Muzu püre haline gelene kadar ezin.",
+                "Yumurta ve yulaf ezmesini ekleyip karıştırın.",
+                "Yapışmaz tavada arkalı önlü altın sarısı olana kadar pişirin."
+            ],
+            "tips": "Muzların çok olgun olması pankeklerin tadını daha da güzelleştirir.",
+            "tags": [
+                "Tatlı",
+                "Düşük Karbo",
+                "Pratik"
+            ]
+        },
+        "en": {
+            "title": "Oat & Banana Pancakes",
+            "subtitle": "A light and nutritious breakfast.",
+            "overview": "This recipe contains no refined sugar and is enriched with the natural aroma of bananas. It keeps you full for a long time.",
+            "steps": [
+                "Mash the banana until it becomes a puree.",
+                "Add egg and oats and mix thoroughly.",
+                "Cook in a non-stick pan on both sides until golden brown."
+            ],
+            "tips": "Using overripe bananas makes the pancakes taste even better.",
+            "tags": [
+                "Sweet",
+                "Low Carb",
+                "Practical"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "image": "/images/salad.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "protein",
+            "value1": "14g",
+            "label2": "fat",
+            "value2": "11g",
+            "label3": "carbs",
+            "value3": "42g",
+            "label4": "time",
+            "value4": "15 min"
+        },
+        "tr": {
+            "title": "Kinoa ve Nohut Kasesi",
+            "subtitle": "Bitkisel protein deposu renkli bir kase.",
+            "overview": "Uzun süre tokluk sağlayan lifli yapısıyla öğle yemekleri için en sağlıklı seçenek.",
+            "steps": [
+                "Kinoayı haşlayıp soğumaya bırakın.",
+                "Nohutları baharatlarla fırınlayarak çıtır hale getirin.",
+                "Tüm malzemeleri kasede birleştirip tahin sosu ekleyin."
+            ],
+            "tips": "Nohutları fırınlamadan önce iyice kurulamanız daha çıtır olmalarını sağlar.",
+            "tags": [
+                "Vegan",
+                "Kase",
+                "Öğle Yemeği"
+            ]
+        },
+        "en": {
+            "title": "Quinoa & Chickpea Bowl",
+            "subtitle": "A colorful bowl packed with plant protein.",
+            "overview": "The healthiest lunch option with its fiber-rich structure that keeps you full for a long time.",
+            "steps": [
+                "Boil the quinoa and let it cool down.",
+                "Roast the chickpeas with spices until crunchy.",
+                "Combine all ingredients in a bowl and drizzle with tahini sauce."
+            ],
+            "tips": "Drying the chickpeas thoroughly before roasting makes them extra crunchy.",
+            "tags": [
+                "Vegan",
+                "Bowl",
+                "Lunch"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "image": "/images/stretching.jpg",
+        "baseCategory": "exercise",
+        "highlights": {
+            "label1": "target",
+            "value1": "flexibility",
+            "label2": "level",
+            "value2": "intermediate",
+            "label3": "duration",
+            "value3": "15 min",
+            "label4": "equipment",
+            "value4": "mat"
+        },
+        "tr": {
+            "title": "Esneklik Artırıcı Akış",
+            "subtitle": "Güne esnek bir vücutla başlayın.",
+            "overview": "Özellikle masa başında çalışanlar için kalça ve omuz açıcı hareketlere odaklanan derin esneme akışı.",
+            "steps": [
+                "Güneşe selam serisiyle vücut ısısını artırın.",
+                "Güvercin pozuyla kalça eklemlerini esnetin.",
+                "Kobra duruşuyla göğüs kafesini ve omuzları açın."
+            ],
+            "tips": "Esneme sırasında kaslarınızın titrediği noktada zorlamayı bırakıp nefese odaklanın.",
+            "tags": [
+                "Yoga",
+                "Esneklik",
+                "Sabah"
+            ]
+        },
+        "en": {
+            "title": "Flexibility Flow",
+            "subtitle": "Start your day with a flexible body.",
+            "overview": "A deep stretching flow focused on hip and shoulder openers, specifically for office workers.",
+            "steps": [
+                "Increase body heat with a Sun Salutation series.",
+                "Stretch the hip joints with the Pigeon Pose.",
+                "Open your chest and shoulders with the Cobra Pose."
+            ],
+            "tips": "If your muscles start shaking during a stretch, back off slightly and focus on your breath.",
+            "tags": [
+                "Yoga",
+                "Flexibility",
+                "Morning"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "image": "/images/salmon.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "protein",
+            "value1": "34g",
+            "label2": "fat",
+            "value2": "18g",
+            "label3": "carbs",
+            "value3": "2g",
+            "label4": "time",
+            "value4": "25 min"
+        },
+        "tr": {
+            "title": "Fırınlanmış Limonlu Somon",
+            "subtitle": "Kas onarımı için ideal akşam yemeği.",
+            "overview": "Yüksek Omega-3 içeriğiyle bilişsel fonksiyonları destekleyen, düşük karbonhidratlı gurme bir lezzet.",
+            "steps": [
+                "Somonu sarımsak ve kekik ile marine edin.",
+                "Limon dilimlerini üzerine dizip yağlı kağıtta fırına verin.",
+                "Kuşkonmazlarla birlikte 200 derecede pişirin."
+            ],
+            "tips": "Somonun kurumaması için fırın tepsisine çok az beyaz sirke veya su ekleyebilirsiniz.",
+            "tags": [
+                "Omega-3",
+                "Akşam Yemeği",
+                "Keto"
+            ]
+        },
+        "en": {
+            "title": "Baked Lemon Salmon",
+            "subtitle": "Ideal dinner for muscle repair.",
+            "overview": "A gourmet low-carb dish that supports cognitive functions with its high Omega-3 content.",
+            "steps": [
+                "Marinate the salmon with garlic and thyme.",
+                "Arrange lemon slices on top and wrap in parchment paper.",
+                "Bake at 200°C alongside fresh asparagus."
+            ],
+            "tips": "Add a splash of water or white vinegar to the tray to keep the salmon moist.",
+            "tags": [
+                "Omega-3",
+                "Dinner",
+                "Keto"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "image": "/images/hiit.jpg",
+        "baseCategory": "exercise",
+        "highlights": {
+            "label1": "target",
+            "value1": "cardio",
+            "label2": "level",
+            "value2": "advanced",
+            "label3": "duration",
+            "value3": "10 min",
+            "label4": "burn",
+            "value4": "high"
+        },
+        "tr": {
+            "title": "10 Dakikalık Yağ Yakıcı",
+            "subtitle": "Zaman kısıtlı olduğunda nabzı yükseltin.",
+            "overview": "Kısa sürede maksimum kalori harcatmayı hedefleyen, metabolizmayı ateşleyen yoğun antrenman.",
+            "steps": [
+                "30 saniye boyunca yapabildiğiniz kadar çok Burpee yapın.",
+                "15 saniye pasif dinlenmeye geçin.",
+                "Mountain Climber ve Jump Squat ile turu tamamlayın."
+            ],
+            "tips": "Önemli olan hız değil, 30 saniye boyunca tempoyu hiç düşürmemektir.",
+            "tags": [
+                "HIIT",
+                "Kardiyo",
+                "Yağ Yakımı"
+            ]
+        },
+        "en": {
+            "title": "10-Minute Fat Burner",
+            "subtitle": "Boost your heart rate on a schedule.",
+            "overview": "An intense metabolism-boosting workout designed to maximize calorie burn in minimum time.",
+            "steps": [
+                "Perform as many Burpees as possible for 30 seconds.",
+                "Take a 15-second passive rest.",
+                "Complete the round with Mountain Climbers and Jump Squats."
+            ],
+            "tips": "Focus on maintaining your pace rather than pure speed for the full 30 seconds.",
+            "tags": [
+                "HIIT",
+                "Cardio",
+                "Fatburn"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "image": "/images/oatmeal.jpg",
+        "baseCategory": "nutrition",
+        "highlights": {
+            "label1": "fiber",
+            "value1": "8g",
+            "label2": "protein",
+            "value2": "12g",
+            "label3": "calories",
+            "value3": "310 kcal",
+            "label4": "time",
+            "value4": "5 min"
+        },
+        "tr": {
+            "title": "Geceden Kalma Yulaf",
+            "subtitle": "Sabahları vakit kazandıran çözüm.",
+            "overview": "Hazırlaması 5 dakika, yemesi ise paha biçilemez. Lifli yapısıyla kan şekerini dengeler.",
+            "steps": [
+                "Yulaf, süt ve chia tohumunu bir kavanozda karıştırın.",
+                "Kapağını kapatıp bir gece buzdolabında bekletin.",
+                "Sabah üzerine fıstık ezmesi ve taze meyve ekleyerek servis edin."
+            ],
+            "tips": "Daha kremsi bir kıvam için karışımın içine bir yemek kaşığı süzme yoğurt ekleyin.",
+            "tags": [
+                "Lifli",
+                "Kahvaltı",
+                "Enerji"
+            ]
+        },
+        "en": {
+            "title": "Overnight Oats",
+            "subtitle": "The ultimate morning time-saver.",
+            "overview": "Takes 5 minutes to prep and provides lasting energy. Balances blood sugar with high fiber.",
+            "steps": [
+                "Mix oats, milk, and chia seeds in a jar.",
+                "Seal the jar and leave in the fridge overnight.",
+                "In the morning, top with peanut butter and fresh fruit before serving."
+            ],
+            "tips": "Add a tablespoon of Greek yogurt for an extra creamy texture.",
+            "tags": [
+                "Fiber",
+                "Breakfast",
+                "Energy"
+            ]
+        }
+    }
+]

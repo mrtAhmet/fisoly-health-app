@@ -1,0 +1,172 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background: #000000;
+    /* koyu arka plan */
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f1f5f9;
+    /* açık yazı */
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+.desktop-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding-inline: 20px;
+}
+
+.desktop-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 25px;
+    width: 1000px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f1f5f9;
+    /* soft gri */
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Hover efekti */
+.nav-link:hover {
+    color: #6755aa;
+    transform: scale(1.05);
+}
+
+/* Alt çizgi animasyonu */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #6755aa;
+    /* açık mavi */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Aktif sayfa */
+.nav-link.active {
+    color: #97dba6;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    background: #020617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1470px) {
+    .desktop-search {
+        width: 70%;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .nav-link::after {
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .nav-link::after {
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .desktop-search {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1115px) {
+    .desktop-search {
+        width: 45%;
+    }
+}
+
+/* @media (max-width: 960px) {
+    .desktop-search {
+        width: 40%;
+    }
+} */
+
+@media (max-width: 935px) {
+    .desktop-search {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 935px) {
+    .mobile-menu {
+        display: none;
+    }
+}

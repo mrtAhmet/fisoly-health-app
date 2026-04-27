@@ -1,0 +1,38 @@
+.lang-container {
+    position: relative;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #334155;
+    color: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    background: #1e293b;
+}
+
+/* Dropdown */
+.lang-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 120px;
+}
+
+.lang-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+    color: #f1f5f9;
+}
+
+.lang-dropdown div:hover {
+    background: #1e293b;
+}

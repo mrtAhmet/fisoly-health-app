@@ -1,0 +1,503 @@
+.homeWrapper {
+    transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    overflow-x: hidden;
+}
+
+.scroll-section {
+    min-height: 100vh;
+    /* Yükseklik içeriğe göre esneyebilsin */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px 20px;
+    /* Header ile çakışmaması için padding artırıldı */
+}
+
+.homeMainDiv {
+    /* ARKA PLAN RENGİ SİLİNDİ: background: #0F172A; artık yok */
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F8FAFC;
+    /* Margin ve padding dengelemek için */
+    margin: 0 auto;
+}
+
+.main-dashboard-section {
+    /* Giriş bölümüne özel ekstra boşluk veya ayar gerekirse buraya */
+    padding-top: 100px;
+}
+
+.homeTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.homeMainSection {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    /* İçeriğin çok yayılmasını engeller, derli toplu durur */
+    gap: 40px;
+    /* Görsel ve araçlar arasındaki boşluk */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.homeMainRight {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 2px rgba(56, 189, 248, 0.2);
+    padding: 20px;
+}
+
+.homeMainLeft {
+    position: relative;
+    /* İçindeki etiketlerin pozisyon alabilmesi için şart */
+    width: 100%;
+    max-width: 600px;
+    /* Görselin çok devasa olmasını engeller */
+    height: 450px;
+    /* Sabit bir yükseklik veya aspect-ratio verebilirsin */
+    border-radius: 24px;
+    overflow: hidden;
+    /* Etiket ve görselin köşelerden taşmaması için */
+    box-shadow: 0 0 35px 5px rgba(56, 189, 248, 0.15);
+    /* Daha önce konuştuğumuz o hafif mavi parlaklık */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Çok ince, şık bir çerçeve */
+}
+
+.leftImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Görseli bozmadan alanı doldurur */
+    transition: transform 0.5s ease;
+    /* Hover yapınca tatlı bir efekt için */
+}
+
+/* Kullanıcı görselin üzerine gelince hafif bir yakınlaşma efekti */
+.homeMainLeft:hover .leftImage {
+    transform: scale(1.05);
+}
+
+.imageLabel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    /* Görselin üstünde kalması için */
+    background: linear-gradient(90deg, #8B5CF6, #3B82F6);
+    /* Header ile uyumlu mor-mavi geçiş */
+    color: rgb(255, 255, 255);
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Opsiyonel: Görselin alt kısmını biraz daha karartmak metin okunurluğunu artırır */
+.imageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
+    pointer-events: none;
+    /* Tıklamayı engellememesi için */
+}
+
+.homeMainRight {
+    flex: 1;
+    /* Masaüstünde alanın %50'sini (veya kalanını) kaplar */
+    display: flex;
+    flex-direction: column;
+    /* Mini araçlar alt alta dizilsin */
+    gap: 25px;
+    /* Mini araçlar arasındaki boşluk */
+    width: 100%;
+}
+
+/* Bölüm Başlıkları */
+.section-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.feature-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* --- YILDIZLI GÖKYÜZÜNÜ ZENGİNLEŞTİRME --- */
+.stars-section {
+    position: relative;
+    /* ÖNEMLİ: Sabit arka planı kaldırıyoruz ki homeWrapper'daki renk görünsün */
+    background: transparent !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#stars {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: twinkleStars 4s ease-in-out infinite;
+
+    /* Box-shadow ile yüzlerce yıldız (Daha fazla koordinat ve hafif blur) */
+    box-shadow:
+        10vw 20vh 1px #FFF, 25vw 35vh 1px #FFF, 45vw 10vh 1px #FFF, 75vw 40vh 1px #FFF,
+        95vw 20vh 1px #FFF, 10vw 80vh 1px #FFF, 30vw 90vh 1px #FFF, 55vw 75vh 1px #FFF,
+        85vw 85vh 1px #FFF, 40vw 55vh 1px #FFF, 65vw 25vh 1px #FFF, 15vw 45vh 1px #FFF,
+        80vw 10vh 1px #FFF, 20vw 20vh 1px #FFF, 40vw 40vh 1px #FFF, 60vw 60vh 1px #FFF,
+        15vw 15vh 1px #FFF, 35vw 25vh 1px #FFF, 55vw 15vh 1px #FFF, 85vw 40vh 1px #FFF, 25vw 70vh 1px #FFF;
+}
+
+/* --- CSS İLE ZARİF PARLAYAN HİLAL --- */
+.moon-crescent {
+    position: absolute;
+    /* Konumu köşeden biraz içeriye aldık */
+    top: 15%;
+    right: 15%;
+    width: 40px;
+    /* Zarif, küçük boyut */
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    /* Arka planı boşaltıyoruz */
+
+    /* SİHİR BURADA: Tek bir daireye iç gölge (inset box-shadow) 
+       vererek hilal şeklini oluşturuyoruz. 
+       - `12px` değeri hilalin kalınlığını belirler.
+       - `#ffffff` hilalin rengidir.
+    */
+    box-shadow: inset 12px 0px 0px 0px #ffffff;
+
+    /* Hilalin açısını hafifçe çevirdik, çıkıntı riskini sıfıra indirdik */
+    transform: rotate(-15deg);
+
+    pointer-events: none;
+
+    /* Ayın yumuşakça parlaması */
+    animation: moonFade 5s ease-in-out infinite;
+}
+
+.moon-crescent::after {
+    display: none;
+}
+
+/* --- ANIMASYONLAR --- */
+@keyframes twinkleStars {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes moonFade {
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* feature-grid içindeki ikonları biraz küçültelim */
+.feature-grid .n-icon {
+    font-size: 2.2rem;
+    /* Kartların içindeki emojileri de biraz ufaltalım */
+}
+
+.feature-content p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.nutrition-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.n-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+    /* Yeşil tonunda border */
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.n-card:hover {
+    background: rgba(74, 222, 128, 0.1);
+    border-color: #4ade80;
+}
+
+.n-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Ortak Kart Yapısı */
+.f-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Bölümlere Özel Renkler */
+.exercise-border {
+    border-color: rgba(192, 132, 252, 0.3);
+}
+
+.exercise-border:hover {
+    background: rgba(192, 132, 252, 0.1);
+    border-color: #c084fc;
+}
+
+.water-border {
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+.water-border:hover {
+    background: rgba(56, 189, 248, 0.1);
+    border-color: #38bdf8;
+}
+
+.sleep-border {
+    border-color: rgba(129, 140, 248, 0.3);
+}
+
+.sleep-border:hover {
+    background: rgba(129, 140, 248, 0.1);
+    border-color: #818cf8;
+}
+
+.discover-container {
+    margin-top: 50px;
+}
+
+.discover-button {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #000;
+    border: none;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.hub-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.hub-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hub-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.hub-card p {
+    font-size: 0.9rem !important;
+    margin-bottom: 20px;
+}
+
+/* Ön İzleme Alanları */
+.hub-preview-img {
+    width: 100%;
+    height: 150px;
+    /* Kartın içindeki ön izleme yüksekliği */
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    /* RESMİ BOYUTLANDIRAN SİHİRLİ SATIRLAR */
+    background-size: cover;
+    /* Resmi bozmadan alanı tamamen doldurur */
+    background-position: center;
+    /* Resmin tam ortasını odaklar */
+    background-repeat: no-repeat;
+
+    opacity: 0.6;
+    /* Yazıların okunması için biraz karartıyoruz */
+    transition: opacity 0.3s ease;
+}
+
+.posts-preview {
+    background-image: url('../../public/images/posts-preview.jpg');
+}
+
+/* Buraya şık bir yemek/egzersiz fotosu */
+.calc-preview {
+    background-image: url('../../public/images/calc-preview.jpg');
+}
+
+/* Buraya bir grafik/hesap makinesi fotosu */
+
+.hub-btn {
+    background: transparent;
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.hub-card:hover .hub-preview-img {
+    opacity: 1;
+    /* Kartın üzerine gelince resim parlasın */
+}
+
+.hub-card:hover .hub-btn {
+    background: #fbbf24;
+    color: #000;
+}
+
+@media (max-width: 1000px) {
+    .homeMainSection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .homeMainRight {
+        width: 100%;
+        max-width: 500px;
+        /* Mobilde çok genişleyip çirkin durmasın diye */
+    }
+}
+
+@media (max-width: 500px) {
+    .feature-content h2 {
+        font-size: 3rem;
+    }
+
+    .feature-content p {
+        font-size: 1rem;
+    }
+
+    .f-card {
+        min-width: 110px;
+    }
+
+    .n-card {
+        min-width: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .feature-grid {
+        gap: 10px;
+    }
+
+    .nutrition-grid {
+        gap: 10px;
+    }
+
+    .feature-content h2 {
+        font-size: 2rem;
+    }
+
+    .feature-content p {
+        font-size: 17px;
+    }
+
+    .f-card {
+        min-width: 80px;
+    }
+
+    .n-card {
+        min-width: 95px;
+    }
+}
+
+@media (max-width: 370px) {
+    .f-card {
+        padding: 10px;
+    }
+
+    .n-card {
+        padding: 10px;
+    }
+}

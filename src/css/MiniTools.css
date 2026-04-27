@@ -1,0 +1,192 @@
+.miniCard {
+    background: rgba(30, 41, 59, 0.4);
+    /* Şeffaf lacivert */
+    backdrop-filter: blur(12px);
+    /* Arkayı bulanıklaştırma (Cam efekti) */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* İnce beyaz çerçeve */
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miniCard:hover {
+    transform: translateY(-5px);
+    /* Üzerine gelince hafif yükselme */
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    /* Hafif mavi parlama */
+}
+
+.miniTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 22px;
+}
+
+.miniInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.miniInput>label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.miniInput input[type=number] {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Çok hafif şeffaf beyaz arka plan */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Çok ince, belirsiz beyaz çerçeve */
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    /* Yuvarlak köşeler */
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input'a Tıklanınca (Focus) */
+.miniInput input[type=number]:focus {
+    outline: none;
+    /* Varsayılan mavi çizgiyi kaldır */
+    border-color: #38BDF8;
+    /* Bizim parlayan mavi rengimiz */
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.miniCalculateButton {
+    /* 1. Renk ve Arka Plan (Gradient) */
+    background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+    /* Mor'dan Mavi'ye şık bir geçiş */
+    color: white;
+    /* Yazı rengi beyaz */
+
+    /* 2. Boyut ve Şekil */
+    padding: 12px 24px;
+    /* Dikey ve yatay boşluk */
+    border: none;
+    /* Kenarlığı tamamen kaldırıyoruz */
+    border-radius: 50px;
+    /* Tam yuvarlak köşeler (Stil 1) */
+    /* Alternatif: border-radius: 12px; (Daha az yuvarlak, köşeli stil - hangisi hoşuna giderse) */
+
+    /* 3. Font (Plus Jakarta Sans zaten varsayılan ama güçlendirelim) */
+    font-weight: 600;
+    /* Biraz kalın */
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    /* Harfler arası hafif boşluk (uppercase için şık durur) */
+    text-transform: uppercase;
+    /* Tüm harfler büyük */
+    cursor: pointer;
+    /* Üzerine gelince el imleci */
+
+    /* 4. Derinlik ve Gölge (Premium Havası) */
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    /* Hafif mavi parlama */
+
+    /* 5. Animasyon Geçişi */
+    transition: all 0.3s ease;
+    /* Tüm değişiklikler yumuşak olsun */
+
+    /* 6. Konumlandırma (Görseldeki gibi ortada durması için gerekirse) */
+    margin-top: 20px;
+}
+
+/* Butonun Üzerine Gelince (Hover) */
+.miniCalculateButton:hover {
+    /* Parlaklığı ve gölgeyi artır */
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+    /* Morumsu parlama */
+
+    /* Çok hafif yukarı yükselme efekti */
+    transform: translateY(-2px);
+
+    /* İstersen gradient yönünü hafifçe değiştirebilirsin */
+    background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+    /* Daha açık tonlar */
+}
+
+/* Butona Tıklanınca (Active) */
+.miniCalculateButton:active {
+    /* Tıklanma hissi için aşağı çökme */
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.miniResult {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Hafif bir zemin oluşturur */
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    /* Sonuç olduğu belli olsun diye kesikli çizgi */
+    text-align: center;
+}
+
+.resultLabel {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    /* Başlığı biraz sönük yapalım ki... */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.resultValue {
+    font-size: 1.8rem;
+    /* ...asıl sonuç (rakam) patlasın! */
+    font-weight: 800;
+    color: #3b82f6;
+    /* Header rengiyle uyumlu mavi veya gradient */
+    margin: 0;
+}
+
+.resultInfoBox {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* Sonuçla arayı hafifçe ayırır */
+}
+
+.infoText {
+    font-size: 0.85rem;
+    /* Küçük ve zarif */
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.infoNavLink {
+    display: inline-block;
+    margin-left: 5px;
+    color: #38BDF8;
+    /* Dikkat çeken bir mavi */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.infoNavLink:hover {
+    color: #8B5CF6;
+    /* Üzerine gelince mor olsun */
+    text-decoration: underline;
+    transform: translateX(3px);
+    /* Hafif bir ok hareketi */
+}
