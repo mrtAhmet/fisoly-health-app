@@ -118,5 +118,18 @@
     "beginner": "Başlangıç",
     "advanced": "İleri Seviye",
     "1 min": "1 Dakika",
-    "duration": "Süre : "
+    "duration": "Süre : ",
+    "heroTitle": "Fisoyl: Bir İsimden Daha Fazlası",
+    "heroSubtitle": "First Step of Your Life (Hayatının İlk Adımı)",
+    "storyTitle": "Rehberinle Tanış",
+    "storyText": "Fisoyl, sadece evde yapabileceğin egzersizlerden ibaret değildir. Biz, sağlıklı yaşamın bir bütün olduğuna inanıyoruz. Bilginin çok, ama netliğin az olduğu bu çağda Fisoyl; beslenme planlarından egzersiz tekniklerine, hesaplama araçlarından motivasyonel rehberliğe kadar her adımında yanında olan dijital bir yol arkadaşıdır.",
+    "philosophyTitle": "Neden Fisoyl?",
+    "features": {
+        "guide": "Kapsamlı Rehber: Sadece ne yapacağını değil, nasıl ve neden yapacağını öğretiyoruz.",
+        "anywhere": "Sınırları Kaldır: İster evde, ister spor salonunda; ekipmanlı veya ekipmansız her yere uyum sağla.",
+        "dataDriven": "Veriye Dayalı: Vücut kitle indeksinden su ihtiyacına kadar her şeyi kişisel verilerinle yönet."
+    },
+    "closing": "Hayatının ilk adımını attın. Şimdi bu adımı kalıcı bir yolculuğa dönüştürelim.",
+    "exploreTitle": "Yolculuğa Başla",
+    "exploreSubtitle": "Rehberimizi keşfedin ve ilk adımınızı atın."
 }

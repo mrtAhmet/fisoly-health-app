@@ -118,5 +118,18 @@
     "beginner": "Beginner",
     "advanced": "Advanced",
     "1 min": "1 min",
-    "duration": "Duration"
+    "duration": "Duration",
+    "heroTitle": "Fisoyl: More Than Just a Name",
+    "heroSubtitle": "First Step of Your Life",
+    "storyTitle": "Meet Your Guide",
+    "storyText": "Fisoyl is not just about home workouts. We believe that healthy living is a holistic journey. In an era where information is abundant but clarity is scarce, Fisoyl stands as your digital companion—guiding you through nutrition plans, exercise techniques, and essential calculation tools every step of the way.",
+    "philosophyTitle": "Why Fisoyl?",
+    "features": {
+        "guide": "Comprehensive Guidance: We don't just tell you what to do, we teach you how and why.",
+        "anywhere": "No Boundaries: At home or at the gym; with or without equipment, adapt to any environment.",
+        "dataDriven": "Data-Driven: Manage everything from BMI to daily water intake with your personal data."
+    },
+    "closing": "You've taken the first step. Now, let’s turn that step into a lifelong journey.",
+    "exploreTitle": "Start Your Journey",
+    "exploreSubtitle": "Explore our guide and take your first step."
 }

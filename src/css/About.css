@@ -1,5 +1,136 @@
-.aboutMainDiv {
-    background: #121212;
-    color: #F8FAFC;
-    height: 100vh;
+/* Sayfanın ana kapsayıcısı */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    color: #e0e0e0;
+    /* Açık gri metin okunaklılık sağlar */
+    background-color: #121212;
+    /* Derin siyah/gri arka plan */
+    line-height: 1.7;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* Başlık tam beyaz */
+    letter-spacing: -1px;
+}
+
+.about-subtitle {
+    font-size: 1.1rem;
+    color: #ffb400;
+    /* Amber sarısı: Fisoyl'un vurgu rengi */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #ffb400;
+    margin: 25px auto;
+}
+
+/* Hikaye Bölümü */
+.about-story {
+    background: #1e1e1e;
+    /* Arka plandan bir ton daha açık gri */
+    padding: 50px;
+    border-radius: 24px;
+    margin-bottom: 80px;
+    border: 1px solid #333;
+    /* Hafif belirginlik için ince kenarlık */
+}
+
+.about-story h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-story p {
+    color: #b0b0b0;
+    /* Gövde metni biraz daha sönük gri */
+}
+
+/* Kartlar Bölümü */
+.about-philosophy h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 40px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: #ffb400;
+    /* Hover olduğunda amber rengi parlasın */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-card p {
+    color: #e0e0e0;
+    font-weight: 400;
+}
+
+/* Footer ve Buton */
+.about-footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.closing-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.start-btn {
+    padding: 18px 50px;
+    background: #ffb400;
+    /* Buton amber rengi */
+    color: #121212;
+    /* Buton metni koyu */
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.start-btn:hover {
+    background: #ffffff;
+    transform: scale(1.05);
 }
