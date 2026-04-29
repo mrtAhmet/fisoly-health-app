@@ -144,5 +144,6 @@
         "message": "Mesajınız",
         "send": "Geri Bildirimi Gönder"
     },
-    "social": "Sosyal Medya"
+    "social": "Sosyal Medya",
+    "success": "Mesajın ulaştı! Fisoyl'u birlikte geliştirdiğimiz için teşekkürler. En kısa sürede göz atacağız. 🚀"
 }

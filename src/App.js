@@ -5,6 +5,8 @@ import MainContent from './layout/MainContent';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
         <div className='Content'>
           <MainContent lang={lang} />
         </div>
+        <ToastContainer position='top-right' theme='dark' />
       </div>
     </BrowserRouter>
   );

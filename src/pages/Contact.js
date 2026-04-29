@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react'; // useRef eklendi
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser'; // Kütüphane dahil edildi
 import '../css/Contact.css';
+import { toast } from 'react-toastify'
 
 function Contact() {
     const { t } = useTranslation();
@@ -21,13 +22,30 @@ function Contact() {
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log("Başarılı:", result.text);
-                alert(t('success'));
+
+                // Şık Başarı Bildirimi
+                toast.success(t('success'), {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    theme: "dark", // Fisoyl'un karanlık temasına uygun
+                });
+
                 // Formu temizle
                 setFormData({ name: '', email: '', subject: '', message: '' });
                 e.target.reset();
             }, (error) => {
                 console.log("Hata:", error.text);
-                alert("Mesaj gönderilemedi, lütfen tekrar deneyin.");
+
+                // Şık Hata Bildirimi
+                toast.error("Mesaj gönderilemedi, lütfen tekrar deneyin.", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    theme: "dark",
+                });
             })
             .finally(() => {
                 setLoading(false);

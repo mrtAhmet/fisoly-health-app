@@ -144,5 +144,6 @@
         "message": "Your Message",
         "send": "Send Feedback"
     },
-    "social": "Social"
+    "social": "Social",
+    "success": "Message received! Thanks for helping us grow Fisoyl. We'll check it out as soon as possible. 🚀"
 }
