@@ -131,5 +131,18 @@
     },
     "closing": "You've taken the first step. Now, let’s turn that step into a lifelong journey.",
     "exploreTitle": "Start Your Journey",
-    "exploreSubtitle": "Explore our guide and take your first step."
+    "exploreSubtitle": "Explore our guide and take your first step.",
+    "title": "Contribute to Growth",
+    "subtitle": "Let's make Fisoyl a better guide together. Your bug reports and suggestions are invaluable to us.",
+    "infoTitle": "Why Contact Us?",
+    "infoText": "Found a bug? Or have a new feature suggestion? While we don't provide professional health advice, we welcome all feedback to improve the platform.",
+    "email": "Email",
+    "form": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "subject": "Subject (Bug, Suggestion, Thanks)",
+        "message": "Your Message",
+        "send": "Send Feedback"
+    },
+    "social": "Social"
 }

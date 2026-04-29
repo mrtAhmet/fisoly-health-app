@@ -120,7 +120,7 @@
     "1 min": "1 Dakika",
     "duration": "Süre : ",
     "heroTitle": "Fisoyl: Bir İsimden Daha Fazlası",
-    "heroSubtitle": "First Step of Your Life (Hayatının İlk Adımı)",
+    "heroSubtitle": "First Step of Your Life",
     "storyTitle": "Rehberinle Tanış",
     "storyText": "Fisoyl, sadece evde yapabileceğin egzersizlerden ibaret değildir. Biz, sağlıklı yaşamın bir bütün olduğuna inanıyoruz. Bilginin çok, ama netliğin az olduğu bu çağda Fisoyl; beslenme planlarından egzersiz tekniklerine, hesaplama araçlarından motivasyonel rehberliğe kadar her adımında yanında olan dijital bir yol arkadaşıdır.",
     "philosophyTitle": "Neden Fisoyl?",
@@ -131,5 +131,18 @@
     },
     "closing": "Hayatının ilk adımını attın. Şimdi bu adımı kalıcı bir yolculuğa dönüştürelim.",
     "exploreTitle": "Yolculuğa Başla",
-    "exploreSubtitle": "Rehberimizi keşfedin ve ilk adımınızı atın."
+    "exploreSubtitle": "Rehberimizi keşfedin ve ilk adımınızı atın.",
+    "title": "Gelişime Katkı Sağla",
+    "subtitle": "Fisoyl'u birlikte daha iyi bir rehber haline getirelim. Hata bildirimleri ve önerilerin bizim için çok değerli.",
+    "infoTitle": "Neden Yazmalısın?",
+    "infoText": "Uygulamada bir hata mı buldun? Ya da yeni bir özellik önerin mi var? Profesyonel bir sağlık desteği sunmasak da, platformu geliştirmek için her türlü geri bildirimini bekliyoruz.",
+    "email": "E-posta",
+    "form": {
+        "name": "Adınız",
+        "email": "E-posta Adresiniz",
+        "subject": "Konu (Hata, Öneri, Teşekkür)",
+        "message": "Mesajınız",
+        "send": "Geri Bildirimi Gönder"
+    },
+    "social": "Sosyal Medya"
 }
