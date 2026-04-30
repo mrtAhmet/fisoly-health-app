@@ -168,5 +168,11 @@
     "about": {
         "title": "About Me & Fisoyl",
         "description": "Hi, I'm Ahmet. As a software developer specializing in React.js, I created Fisoyl to combine my passion for technology with a healthy lifestyle. This project focuses on 'vitality'—helping users track and improve their overall energy and well-being through minimalist and premium digital experiences. I believe that tracking your progress is the first step toward a more vibrant life."
+    },
+    "footer": {
+        "rights": "© 2026 Fisoyl. All rights reserved.",
+        "about": "About Us",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
     }
 }

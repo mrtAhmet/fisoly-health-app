@@ -168,5 +168,11 @@
     "about": {
         "title": "Hakkımda & Fisoyl",
         "description": "Merhaba, ben Ahmet. React.js üzerine uzmanlaşmış bir yazılım geliştiricisi olarak, teknolojiye olan tutkumu sağlıklı yaşam bilinciyle birleştirmek için Fisoyl'u hayata geçirdim. Bu proje, kullanıcıların genel enerjilerini ve iyi oluş hallerini (vitalite) minimalist ve premium bir dijital deneyimle takip etmelerine odaklanıyor. Gelişimi takip etmenin, daha canlı bir hayata giden ilk adım olduğuna inanıyorum."
+    },
+    "footer": {
+        "rights": "© 2026 Fisoyl. Tüm hakları saklıdır.",
+        "about": "Hakkımızda",
+        "privacy": "Gizlilik Politikası",
+        "terms": "Kullanım Şartları"
     }
 }
