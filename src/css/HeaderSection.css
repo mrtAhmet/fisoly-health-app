@@ -22,6 +22,20 @@
     letter-spacing: 0.6px;
 }
 
+.logo a {
+    text-decoration: none;
+    /* Alt çizgiyi kaldırır */
+    color: inherit;
+    /* Logonun ana rengini (beyaz/amber) korur */
+    font-weight: 700;
+    /* Logoyu daha belirgin yapar */
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: #ffb400;
+}
+
 .desktop-search {
     display: flex;
     flex-direction: column;

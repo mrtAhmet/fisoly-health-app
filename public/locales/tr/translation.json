@@ -1,6 +1,6 @@
 {
     "home": "Ana Sayfa",
-    "about": "Hakkında",
+    "aboutButton": "Hakkımızda",
     "contact": "İletişim",
     "posts": "Gönderiler",
     "language": "TR",
@@ -145,5 +145,28 @@
         "send": "Geri Bildirimi Gönder"
     },
     "social": "Sosyal Medya",
-    "success": "Mesajın ulaştı! Fisoyl'u birlikte geliştirdiğimiz için teşekkürler. En kısa sürede göz atacağız. 🚀"
+    "success": "Mesajın ulaştı! Fisoyl'u birlikte geliştirdiğimiz için teşekkürler. En kısa sürede göz atacağız. 🚀",
+    "legal": {
+        "privacyTitle": "Gizlilik Politikası",
+        "termsTitle": "Kullanım Şartları",
+        "lastUpdate": "Son Güncelleme: Nisan 2026",
+        "privacy": {
+            "section1Title": "1. Veri Toplama",
+            "section1Text": "Fisoyl üzerinden bizimle iletişime geçtiğinizde; adınız, e-posta adresiniz ve mesaj içeriğiniz size dönüş yapabilmemiz için toplanır.",
+            "section2Title": "2. Verilerin Kullanımı",
+            "section2Text": "bu veriler sadece iletişim ve geri bildirimlerinizi değerlendirmek amacıyla kullanılır. Kişisel bilgileriniz üçüncü taraflarla paylaşılmaz.",
+            "section3Title": "3. Çerezler ve Reklamlar",
+            "section3Text": "Sitemizde reklam sunmak için Google AdSense kullanabiliriz. Google, ilgi alanlarınıza göre reklam göstermek için çerezleri kullanabilir."
+        },
+        "terms": {
+            "section1Title": "1. Kullanım Amacı",
+            "section1Text": "Fisoyl, sağlık ve vitalite odaklı bir takip projesidir. Tüm içerikler bilgilendirme amaçlıdır.",
+            "section2Title": "2. Tıbbi Sorumluluk Reddi",
+            "section2Text": "Sunulan bilgiler tıbbi tavsiye niteliği taşımaz. Yeni bir sağlık programına başlamadan önce lütfen bir uzmana danışın."
+        }
+    },
+    "about": {
+        "title": "Hakkımda & Fisoyl",
+        "description": "Merhaba, ben Ahmet. React.js üzerine uzmanlaşmış bir yazılım geliştiricisi olarak, teknolojiye olan tutkumu sağlıklı yaşam bilinciyle birleştirmek için Fisoyl'u hayata geçirdim. Bu proje, kullanıcıların genel enerjilerini ve iyi oluş hallerini (vitalite) minimalist ve premium bir dijital deneyimle takip etmelerine odaklanıyor. Gelişimi takip etmenin, daha canlı bir hayata giden ilk adım olduğuna inanıyorum."
+    }
 }

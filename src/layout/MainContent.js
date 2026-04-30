@@ -9,6 +9,8 @@ import Calculate from '../pages/Calculate';
 import BmiCalculator from '../components/Calculators/BmiCalculator';
 import WaterCalculator from '../components/Calculators/WaterCalculator';
 import PostDetail from '../pages/PostDetail';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfService from '../pages/TermsOfService';
 
 function MainContent() {
     return (
@@ -22,6 +24,8 @@ function MainContent() {
                 <Route path='/calculate/bmi' element={<BmiCalculator />} />
                 <Route path='/calculate/water' element={<WaterCalculator />} />
                 <Route path='/posts/:id' element={<PostDetail />} />
+                <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+                <Route path='/terms-of-service' element={<TermsOfService />} />
             </Routes>
         </div>
     )

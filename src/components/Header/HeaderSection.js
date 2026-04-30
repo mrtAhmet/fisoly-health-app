@@ -17,7 +17,7 @@ function HeaderSection({ lang, setLang }) {
 
     return (
         <header className="header">
-            <div className="logo">Fisoyl</div>
+            <div className="logo"><NavLink to="/">Fisoyl</NavLink></div>
 
             {/* Desktop Search*/}
 
@@ -33,7 +33,7 @@ function HeaderSection({ lang, setLang }) {
                 </NavLink>
 
                 <NavLink to="/about" className="nav-link">
-                    {t('about')}
+                    {t('aboutButton')}
                 </NavLink>
 
                 <NavLink to="/contact" className="nav-link">
@@ -58,7 +58,7 @@ function HeaderSection({ lang, setLang }) {
                     </NavLink>
 
                     <NavLink to="/about" className="nav-link">
-                        {t('about')}
+                        {t('aboutButton')}
                     </NavLink>
 
                     <NavLink to="/contact" className="nav-link">

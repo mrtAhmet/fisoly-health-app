@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './css/App.css';
 import HeaderSection from './components/Header/HeaderSection';
 import MainContent from './layout/MainContent';
+import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollToTop from './components/ScrollToTop';
@@ -22,6 +23,7 @@ function App() {
         <div className='Content'>
           <MainContent lang={lang} />
         </div>
+        <Footer />
         <ToastContainer position='top-right' theme='dark' />
       </div>
     </BrowserRouter>

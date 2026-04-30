@@ -1,0 +1,53 @@
+.legal-container {
+    max-width: 800px;
+    margin: 120px auto 60px;
+    /* Navbar'ın altında kalmaması için pay verdik */
+    padding: 40px;
+    background-color: #1a1a1a;
+    /* Arka plan renginle uyumlu */
+    color: #e0e0e0;
+    line-height: 1.8;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Inter', sans-serif;
+}
+
+.legal-container h1 {
+    color: #ffb400;
+    /* Fisoyl Amber rengi */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+.legal-container p.last-update {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.legal-container section {
+    margin-bottom: 35px;
+}
+
+.legal-container h2 {
+    color: #00ced1;
+    /* Fisoyl Turkuaz rengi (isteğe bağlı) */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.legal-container p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #ccc;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .legal-container {
+        margin: 100px 20px 40px;
+        padding: 25px;
+    }
+}

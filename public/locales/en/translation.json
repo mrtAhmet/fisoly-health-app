@@ -1,6 +1,6 @@
 {
     "home": "Home",
-    "about": "About",
+    "aboutButton": "About",
     "contact": "Contact",
     "posts": "Posts",
     "language": "EN",
@@ -145,5 +145,28 @@
         "send": "Send Feedback"
     },
     "social": "Social",
-    "success": "Message received! Thanks for helping us grow Fisoyl. We'll check it out as soon as possible. 🚀"
+    "success": "Message received! Thanks for helping us grow Fisoyl. We'll check it out as soon as possible. 🚀",
+    "legal": {
+        "privacyTitle": "Privacy Policy",
+        "termsTitle": "Terms of Service",
+        "lastUpdate": "Last Updated: April 2026",
+        "privacy": {
+            "section1Title": "1. Data Collection",
+            "section1Text": "When you contact us via Fisoyl, we collect your name, email address, and the content of your message to respond to your inquiries.",
+            "section2Title": "2. Use of Data",
+            "section2Text": "This data is used solely for communication and evaluating your feedback. We do not share your personal information with third parties.",
+            "section3Title": "3. Cookies and Ads",
+            "section3Text": "We may use Google AdSense to serve ads. Google may use cookies to serve ads based on your interests."
+        },
+        "terms": {
+            "section1Title": "1. Purpose of Use",
+            "section1Text": "Fisoyl is a health and vitality tracking project. All content is for informational purposes only.",
+            "section2Title": "2. Medical Disclaimer",
+            "section2Text": "The information provided does not constitute medical advice. Please consult a professional before starting any new health program."
+        }
+    },
+    "about": {
+        "title": "About Me & Fisoyl",
+        "description": "Hi, I'm Ahmet. As a software developer specializing in React.js, I created Fisoyl to combine my passion for technology with a healthy lifestyle. This project focuses on 'vitality'—helping users track and improve their overall energy and well-being through minimalist and premium digital experiences. I believe that tracking your progress is the first step toward a more vibrant life."
+    }
 }
