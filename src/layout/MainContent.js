@@ -11,6 +11,8 @@ import WaterCalculator from '../components/Calculators/WaterCalculator';
 import PostDetail from '../pages/PostDetail';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsOfService from '../pages/TermsOfService';
+import Blog from '../pages/Blog';
+import BlogDetail from '../pages/BlogDetail';
 
 function MainContent() {
     return (
@@ -26,6 +28,8 @@ function MainContent() {
                 <Route path='/posts/:id' element={<PostDetail />} />
                 <Route path='/privacy-policy' element={<PrivacyPolicy />} />
                 <Route path='/terms-of-service' element={<TermsOfService />} />
+                <Route path='/blog' element={<Blog />} />
+                <Route path="/blog/:id" element={<BlogDetail />} />
             </Routes>
         </div>
     )

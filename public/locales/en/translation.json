@@ -1,6 +1,6 @@
 {
     "home": "Home",
-    "aboutButton": "About",
+    "blogsButton": "Blogs",
     "contact": "Contact",
     "posts": "Posts",
     "language": "EN",
@@ -174,5 +174,21 @@
         "about": "About Us",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
+    },
+    "blog": {
+        "pageTitle": "Vitality Blog",
+        "pageSubtitle": "Insights for a more vibrant and digital healthy life.",
+        "readMore": "Read More",
+        "post1": {
+            "title": "The Story of Fisoyl",
+            "summary": "How I combined React.js with my passion for health to create a unique digital experience."
+        },
+        "post2": {
+            "title": "What is Vitality?",
+            "summary": "Understanding the science behind being vibrant and how digital tools can help."
+        },
+        "backToBlog": "Back to Blog",
+        "notFound": "Post not found.",
+        "sharePost": "Share this post:"
     }
 }

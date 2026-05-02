@@ -1,0 +1,47 @@
+[
+    {
+        "id": "fisoyl-hikayesi",
+        "title": "Fisoyl'un Hikayesi: React ile Modern Sağlık",
+        "summary": "Teknoloji ve sağlığı minimalist bir tasarımda nasıl birleştirdik?",
+        "content": "Fisoyl, sadece bir uygulama değil; dijital dünyada zindeliği (vitality) yeniden tanımlama çabasıdır. React.js'in esnekliği ile geliştirilen bu proje, kullanıcıların hayatına estetik ve fonksiyonelliği aynı anda katmayı hedefler...",
+        "date": "02.05.2026",
+        "category": "Teknoloji",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80"
+    },
+    {
+        "id": "vitalite-nedir",
+        "title": "Vitalite Nedir ve Neden Önemlidir?",
+        "summary": "Zindelik kavramının arkasındaki bilimi keşfedin.",
+        "content": "Vitalite, sadece hasta olmamak değil; her sabah güne yüksek enerji ve berrak bir zihinle başlamaktır. Bu yazımızda, hücresel düzeyde enerji yönetiminden uyku düzenine kadar canlılığı artıran yöntemleri ele alıyoruz...",
+        "date": "01.05.2026",
+        "category": "Sağlık",
+        "image": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&q=80"
+    },
+    {
+        "id": "dijital-detoks-rehberi",
+        "title": "Dijital Detoks ile Zihinsel Berraklık",
+        "summary": "Ekran başında geçen süreyi yöneterek daha canlı hissedin.",
+        "content": "Sürekli bildirimlerin arasında kaybolduğumuz modern dünyada, zihinsel sağlığı korumak artık bir lüks değil ihtiyaç. Fisoyl'un felsefesinde yer alan 'minimalizm' sadece tasarımda değil, dijital kullanımda da geçerlidir...",
+        "date": "30.04.2026",
+        "category": "Yaşam",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80"
+    },
+    {
+        "id": "su-tuketimi-enerji",
+        "title": "Su Tüketiminin Enerji Seviyenize Etkisi",
+        "summary": "Basit bir alışkanlığın arkasındaki devasa güç.",
+        "content": "Vücudumuzun %70'i su iken, hafif bir susuzluğun bile zihinsel performansı %20 oranında düşürebildiğini biliyor muydunuz? Gün boyu enerjinizi sabit tutmanın en kolay yolu doğru zamanlanmış su tüketimidir...",
+        "date": "29.04.2026",
+        "category": "Beslenme",
+        "image": "https://images.unsplash.com/photo-1548919973-5dea584cf2fe?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+        "id": "minimalist-fitness",
+        "title": "Minimalist Fitness: Az Ekipman Çok Verim",
+        "summary": "Spor salonuna gitmeden de zinde kalmak mümkün.",
+        "content": "Kendi vücut ağırlığınızı kullanarak yapacağınız doğru planlanmış bir antrenman, pahalı makinelerden daha etkili olabilir. Önemli olan süreklilik ve doğru formdur...",
+        "date": "28.04.2026",
+        "category": "Spor",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
+    }
+]

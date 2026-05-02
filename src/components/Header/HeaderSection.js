@@ -32,8 +32,8 @@ function HeaderSection({ lang, setLang }) {
                     {t('home')}
                 </NavLink>
 
-                <NavLink to="/about" className="nav-link">
-                    {t('aboutButton')}
+                <NavLink to="/blog" className="nav-link">
+                    {t('blogsButton')}
                 </NavLink>
 
                 <NavLink to="/contact" className="nav-link">

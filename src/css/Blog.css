@@ -1,0 +1,124 @@
+/* src/css/Blog.css */
+.blog-container {
+    max-width: 900px;
+    /* Yatay kartlar için biraz daha dar tutmak okumayı kolaylaştırır */
+    margin: 120px auto 60px;
+    padding: 0 20px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    color: #ffb400;
+    /* Fisoyl Amber */
+    margin-bottom: 10px;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-horizontal-card {
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-horizontal-card:hover {
+    transform: translateX(10px);
+    /* Sağa doğru hafif kayma efekti */
+    border-color: #00ced1;
+    /* Turkuaz vurgu */
+}
+
+.blog-card-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    flex: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-card-meta {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.blog-card-category {
+    color: #ffb400;
+    /* Amber */
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-card-date {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.blog-card-content h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.blog-card-content p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #00ced1;
+    /* Fisoyl Turkuaz */
+    text-decoration: none;
+    font-weight: 600;
+    transition: letter-spacing 0.3s ease;
+}
+
+.read-more:hover {
+    letter-spacing: 1px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .blog-horizontal-card {
+        flex-direction: column;
+    }
+
+    .blog-card-image {
+        max-width: 100%;
+        min-width: 100%;
+        height: 200px;
+    }
+
+    .blog-horizontal-card:hover {
+        transform: translateY(-5px);
+        /* Mobilde yukarı kaysın */
+    }
+}

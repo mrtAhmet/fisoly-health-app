@@ -1,6 +1,6 @@
 {
     "home": "Ana Sayfa",
-    "aboutButton": "Hakkımızda",
+    "blogsButton": "Bloglar",
     "contact": "İletişim",
     "posts": "Gönderiler",
     "language": "TR",
@@ -174,5 +174,21 @@
         "about": "Hakkımızda",
         "privacy": "Gizlilik Politikası",
         "terms": "Kullanım Şartları"
+    },
+    "blog": {
+        "pageTitle": "Vitalite Blog",
+        "pageSubtitle": "Daha canlı ve dijital bir sağlıklı yaşam için rehberler.",
+        "readMore": "Devamını Oku",
+        "post1": {
+            "title": "Fisoyl'un Hikayesi",
+            "summary": "React.js ve sağlıklı yaşam tutkumu benzersiz bir dijital deneyime nasıl dönüştürdüm?"
+        },
+        "post2": {
+            "title": "Vitalite Nedir?",
+            "summary": "Zindelik kavramının arkasındaki bilimi ve dijital araçların gelişimimizdeki rolünü keşfedin."
+        },
+        "backToBlog": "Blog'a Geri Dön",
+        "notFound": "Yazı bulunamadı.",
+        "sharePost": "Bu yazıyı paylaşın:"
     }
 }
